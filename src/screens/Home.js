@@ -7,13 +7,10 @@ import {
   SafeAreaView,
   TouchableOpacity,
 } from 'react-native';
-import {RadioBrowserApi, StationSearchType} from 'radio-browser-api';
 
 const Home = () => {
   const callApi = async () => {
-    const api = new RadioBrowserApi('MusiMe');
-
-    console.log(api);
+    console.log('apicalled');
   };
 
   return (
@@ -35,15 +32,13 @@ const Home = () => {
 const styles = StyleSheet.create({
   homecontainer: {
     flex: 1,
-    // width: '100%',
-    // height: '200%',
-    backgroundColor: '#FAA',
+    backgroundColor: '#aaa',
   },
   innercontainer: {
     marginTop: 150,
     padding: 100,
     marginHorizontal: 10,
-    backgroundColor: '#B44',
+    backgroundColor: '#eee',
     justifyContent: 'center',
     alignItems: 'center',
     alignContent: 'center',
