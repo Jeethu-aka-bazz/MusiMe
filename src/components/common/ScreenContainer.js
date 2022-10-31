@@ -1,10 +1,10 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 const ScreenContainer = ({children}) => {
   return (
     <>
-      <SafeAreaView style={styles.homecontainer}>{children}</SafeAreaView>
+      <View style={styles.homecontainer}>{children}</View>
     </>
   );
 };
@@ -12,7 +12,8 @@ const ScreenContainer = ({children}) => {
 const styles = StyleSheet.create({
   homecontainer: {
     flex: 1,
-    backgroundColor: '#aaa',
+    backgroundColor: '#000',
+    paddingLeft: 30,
   },
 });
 

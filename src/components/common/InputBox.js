@@ -10,15 +10,15 @@ import search from '../../assets/search.png';
 import view from '../../assets/view.png';
 import viewHide from '../../assets/view_hide.png';
 
-const InputBox = ({lefticon, righticon, isPassword}) => {
+const InputBox = ({lefticon, righticon, isPassword, styleprops}) => {
   const [showPassword, setShowPassword] = useState(isPassword);
   return (
     <>
-      <View style={styles.inputBox}>
+      <View style={[styles.inputBox, {...styleprops}]}>
         {lefticon && <Image source={search} style={styles.image} />}
         <TextInput
           style={styles.textinputBox}
-          placeholder="dfdsf"
+          placeholder=""
           secureTextEntry={showPassword}
         />
         {righticon && (
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     flexDirection: 'row',
     height: 40,
+    width: '99%',
   },
   image: {
     height: 33,
@@ -53,7 +54,8 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   textinputBox: {
-    width: '80%',
+    width: '88%',
+    color: 'white',
   },
 });
 

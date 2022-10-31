@@ -4,6 +4,7 @@ import getSearchApi from '../api/Api';
 import RecomendedMusic from '../components/Home/RecomendedMusic';
 import ScreenContainer from '../components/common/ScreenContainer';
 import {store, persistor} from '../store/store';
+import Header from '../components/common/Header';
 
 const Home = () => {
   const callSearchApi = async () => {
@@ -15,11 +16,14 @@ const Home = () => {
   console.log('persistor', persistor);
 
   return (
-    <ScreenContainer>
-      <ScrollView>
-        <RecomendedMusic callSearchApi={callSearchApi} />
-      </ScrollView>
-    </ScreenContainer>
+    <>
+      <Header />
+      <ScreenContainer>
+        <ScrollView>
+          <RecomendedMusic callSearchApi={callSearchApi} />
+        </ScrollView>
+      </ScreenContainer>
+    </>
   );
 };
 
