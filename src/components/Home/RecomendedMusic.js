@@ -5,7 +5,7 @@ import InputBox from '../common/InputBox';
 const RecomendedMusic = ({callSearchApi}) => {
   return (
     <View>
-      <InputBox />
+      <InputBox lefticon />
       <TouchableOpacity onPress={callSearchApi}>
         <Text>helldsdo</Text>
       </TouchableOpacity>

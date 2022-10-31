@@ -11,7 +11,6 @@ const Home = () => {
     console.log(listOfMusic);
   };
 
-  // console.log(process);
   console.log('store', store);
   console.log('persistor', persistor);
 
