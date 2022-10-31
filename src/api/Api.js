@@ -1,6 +1,4 @@
-const apiBaseUrl = 'https://ws.audioscrobbler.com/2.0/';
-const ApiKey = '02337ace2e1fb8324fa527e58e799468';
-
+import {apiBaseUrl, ApiKey} from './config';
 // ?method=album.search
 
 const getSearchApi = async () => {

@@ -1,7 +1,8 @@
-const counterslice = (state = {value: 0}, action) => {
+let initialValue = 0;
+
+const counterslice = (state = initialValue, action) => {
   if (action.type === 'increase') {
-    console.log('stopersfds', state.value + 1);
-    // state++;
+    state++;
   } else if (action.type === 'decreament') {
     state--;
   }
