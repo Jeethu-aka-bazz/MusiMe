@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {ScrollView} from 'react-native';
 import getSearchApi from '../api/Api';
 import RecomendedMusic from '../components/Home/RecomendedMusic';
-import ScreenContainer from '../components/ScreenContainer';
+import ScreenContainer from '../components/common/ScreenContainer';
 import {store, persistor} from '../store/store';
 
 const Home = () => {
