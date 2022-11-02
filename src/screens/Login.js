@@ -11,7 +11,7 @@ const Login = () => {
       <ScreenContainer>
         <KeyboardAvoidingView
           behavior={Platform.OS === 'android' ? 'height' : 'padding'}>
-          <LoginBox />
+          <LoginBox title="Login" />
         </KeyboardAvoidingView>
       </ScreenContainer>
     </>

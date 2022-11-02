@@ -2,6 +2,7 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import Home from '../screens/Home';
 import Login from '../screens/Login';
+import SignUp from '../screens/SignUp';
 
 const Rootnavigation = () => {
   const Stack = createStackNavigator();
@@ -15,6 +16,9 @@ const Rootnavigation = () => {
         </Stack.Screen>
         <Stack.Screen name="Login">
           {screenProps => <Login screenProps={{...screenProps}} />}
+        </Stack.Screen>
+        <Stack.Screen name="Signup">
+          {screenProps => <SignUp screenProps={{...screenProps}} />}
         </Stack.Screen>
       </Stack.Navigator>
     </>
