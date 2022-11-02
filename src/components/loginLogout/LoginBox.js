@@ -4,9 +4,41 @@ import {useNavigation} from '@react-navigation/native';
 
 import React from 'react';
 import InputBox from '../common/InputBox';
+import {useState} from 'react';
+import {useEffect} from 'react';
 
 const LoginBox = ({title}) => {
   const navigation = useNavigation();
+  const [email, setEmail] = useState('');
+  const [emailValid, setEmailValid] = useState(false);
+  const [password, setPassword] = useState('');
+  const [passwordValid, setPasswordValid] = useState(false);
+
+  const validateEmail = checkemail => {
+    if (checkemail) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(checkemail);
+    }
+    return true;
+  };
+
+  const validatePassword = checkpassword => {
+    if (checkpassword) {
+      const re =
+        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%#*?&]{8,}$/;
+      return re.test(checkpassword);
+    }
+    return true;
+  };
+
+  useEffect(() => {
+    setEmailValid(validateEmail(email));
+  }, [email]);
+
+  useEffect(() => {
+    setPasswordValid(validatePassword(password));
+  }, [password]);
+
   return (
     <View style={styles.main}>
       <TouchableOpacity
@@ -17,13 +49,30 @@ const LoginBox = ({title}) => {
         <Text style={styles.heading}>{title}</Text>
       </TouchableOpacity>
       <View style={styles.top}>
-        <InputBox label="Email" placeholder="Email" />
+        <InputBox
+          label="Email"
+          placeholder="Email"
+          value={email}
+          changevalue={setEmail}
+          isValid={emailValid}
+          errorMsg="Invalid Email"
+        />
+      </View>
+      <View style={styles.top}>
         <InputBox
           isPassword
           righticon
           styleprops={styles.input}
           placeholder="Password"
           label="Password"
+          value={password}
+          changevalue={setPassword}
+          isValid={passwordValid}
+          errorMsg={
+            title !== 'Login'
+              ? 'Password must contain \nmore than 8 characters \n1 upperCase\n1 special char\n1 number'
+              : 'Invalid Password'
+          }
         />
       </View>
 
@@ -74,14 +123,8 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   top: {
-    paddingTop: 16,
     paddingBottom: 16,
     paddingRight: 20,
-  },
-  input: {
-    alignSelf: 'center',
-    marginBottom: 20,
-    marginTop: 10,
   },
   underline: {
     textDecorationColor: 'white',

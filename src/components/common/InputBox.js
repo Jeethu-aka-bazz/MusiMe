@@ -17,6 +17,10 @@ const InputBox = ({
   isPassword,
   styleprops,
   label,
+  value,
+  changevalue,
+  isValid = 'true',
+  errorMsg,
   placeholder = 'inputText',
 }) => {
   const [showPassword, setShowPassword] = useState(isPassword);
@@ -29,11 +33,15 @@ const InputBox = ({
   return (
     <>
       {label && <Text style={styles.label}>{label}</Text>}
-      <View style={[styles.inputBox, {...styleprops}]}>
+      <View style={[styles.inputBox(isValid), {...styleprops}]}>
         {lefticon && <TextBoxIcon source={search} makeSearch={makeSearch} />}
         <TextInput
           style={styles.textinputBox}
           placeholder={placeholder}
+          value={value}
+          onChangeText={e => {
+            changevalue(e);
+          }}
           placeholderTextColor="#aaa"
           secureTextEntry={showPassword}
         />
@@ -44,6 +52,7 @@ const InputBox = ({
           />
         )}
       </View>
+      {!isValid && <Text style={[styles.error]}>{errorMsg}</Text>}
     </>
   );
 };
@@ -59,9 +68,9 @@ const TextBoxIcon = ({source, changePassword, makeSearch}) => {
 };
 
 const styles = StyleSheet.create({
-  inputBox: {
+  inputBox: isValid => ({
     backgroundColor: 'transparent',
-    borderColor: '#fff',
+    borderColor: isValid ? '#fff' : 'red',
     borderWidth: 1,
     paddingHorizontal: 10,
     borderRadius: 15,
@@ -69,9 +78,8 @@ const styles = StyleSheet.create({
     height: 40,
     width: '100%',
     justifyContent: 'space-between',
-    marginBottom: 20,
     marginTop: 10,
-  },
+  }),
   image: {
     height: 33,
     width: 31,
@@ -88,6 +96,11 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontFamily: 'Rambla',
     color: 'white',
+  },
+  error: {
+    marginTop: 5,
+    marginLeft: 6,
+    color: 'red',
   },
 });
 
