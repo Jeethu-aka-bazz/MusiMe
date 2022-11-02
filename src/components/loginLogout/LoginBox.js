@@ -33,7 +33,7 @@ export default LoginBox;
 const styles = StyleSheet.create({
   heading: {
     fontSize: 44,
-    fontFamily: 'MouseMemoirs-Regular',
+    fontFamily: 'Mouse Memoirs',
     color: 'white',
     paddingBottom: 10,
   },

@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     minHeight: 80,
   },
   title: {
-    fontFamily: 'MouseMemoirs-Regular',
+    fontFamily: 'Mouse Memoirs',
     fontSize: 32,
     color: '#33363F',
   },
