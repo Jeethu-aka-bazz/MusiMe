@@ -12,7 +12,7 @@ const ScreenContainer = ({children}) => {
 const styles = StyleSheet.create({
   homecontainer: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#070D20',
     paddingLeft: 30,
   },
 });
