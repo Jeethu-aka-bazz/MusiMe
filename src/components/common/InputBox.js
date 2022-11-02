@@ -22,6 +22,7 @@ const InputBox = ({
   isValid = 'true',
   errorMsg,
   placeholder = 'inputText',
+  keyboardType = 'default',
 }) => {
   const [showPassword, setShowPassword] = useState(isPassword);
   const changePassword = () => {
@@ -44,6 +45,7 @@ const InputBox = ({
           }}
           placeholderTextColor="#aaa"
           secureTextEntry={showPassword}
+          keyboardType={keyboardType}
         />
         {righticon && (
           <TextBoxIcon

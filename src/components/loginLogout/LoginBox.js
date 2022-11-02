@@ -56,6 +56,7 @@ const LoginBox = ({title}) => {
           changevalue={setEmail}
           isValid={emailValid}
           errorMsg="Invalid Email"
+          keyboardType="email-address"
         />
       </View>
       <View style={styles.top}>
