@@ -15,6 +15,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const presistConfig = {
   key: 'root',
   storage: AsyncStorage,
+  whitelist: ['counter'],
+  // blacklist: ['counter'],
 };
 
 const RootReducer = combineReducers({
