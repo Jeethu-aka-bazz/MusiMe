@@ -2,15 +2,15 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "src/assets/fonts/Monoton-Regular.ttf",
+      "path": "src/assets/fonts/Monoton.ttf",
       "sha1": "153a328e43fe091266e300116d93536044d74109"
     },
     {
-      "path": "src/assets/fonts/MouseMemoirs-Regular.ttf",
+      "path": "src/assets/fonts/MouseMemoirs.ttf",
       "sha1": "b236a92b2a4920b88baa212fcf82ffcb0f0db0ac"
     },
     {
-      "path": "src/assets/fonts/Rambla-Regular.ttf",
+      "path": "src/assets/fonts/Rambla.ttf",
       "sha1": "41dea9bba737181502bfd8402ca922882c2543ba"
     }
   ]

@@ -53,9 +53,9 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Monoton-Regular.ttf</string>
-		<string>MouseMemoirs-Regular.ttf</string>
-		<string>Rambla-Regular.ttf</string>
+		<string>Monoton.ttf</string>
+		<string>MouseMemoirs.ttf</string>
+		<string>Rambla.ttf</string>
 	</array>
 </dict>
 </plist>

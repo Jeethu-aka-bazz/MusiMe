@@ -12,11 +12,11 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		166DD6B763FC42FA9EB45E46 /* MouseMemoirs-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 995FF244B2BE4EB19DE9D00C /* MouseMemoirs-Regular.ttf */; };
-		3CEF1BC6DE5F4DCBBE63E03A /* Rambla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3721BF52155A4523B5DEA57D /* Rambla-Regular.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-MusiMe-MusiMeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-MusiMe-MusiMeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		B8DFED8239C94011AB8CB8A7 /* Monoton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5906BEA17AD847B89EDC8ADE /* Monoton-Regular.ttf */; };
+		C722C0B90DA141DC859919AD /* Monoton.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACA6C10D572F4D248133A3FB /* Monoton.ttf */; };
+		9E8F7430DB9D4D8487E71C15 /* MouseMemoirs.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A763203E2504553A41D0EAA /* MouseMemoirs.ttf */; };
+		EEEA7C9E0E2F4924A35B3493 /* Rambla.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 778CE54C1A574BC89FAE6BEA /* Rambla.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,16 +40,16 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MusiMe/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MusiMe/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-MusiMe-MusiMeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusiMe-MusiMeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3721BF52155A4523B5DEA57D /* Rambla-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rambla-Regular.ttf"; path = "../src/assets/fonts/Rambla-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-MusiMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiMe.debug.xcconfig"; path = "Target Support Files/Pods-MusiMe/Pods-MusiMe.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-MusiMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiMe.release.xcconfig"; path = "Target Support Files/Pods-MusiMe/Pods-MusiMe.release.xcconfig"; sourceTree = "<group>"; };
-		5906BEA17AD847B89EDC8ADE /* Monoton-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Monoton-Regular.ttf"; path = "../src/assets/fonts/Monoton-Regular.ttf"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-MusiMe-MusiMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiMe-MusiMeTests.debug.xcconfig"; path = "Target Support Files/Pods-MusiMe-MusiMeTests/Pods-MusiMe-MusiMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-MusiMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusiMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MusiMe/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-MusiMe-MusiMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiMe-MusiMeTests.release.xcconfig"; path = "Target Support Files/Pods-MusiMe-MusiMeTests/Pods-MusiMe-MusiMeTests.release.xcconfig"; sourceTree = "<group>"; };
-		995FF244B2BE4EB19DE9D00C /* MouseMemoirs-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "MouseMemoirs-Regular.ttf"; path = "../src/assets/fonts/MouseMemoirs-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ACA6C10D572F4D248133A3FB /* Monoton.ttf */ = {isa = PBXFileReference; name = "Monoton.ttf"; path = "../src/assets/fonts/Monoton.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3A763203E2504553A41D0EAA /* MouseMemoirs.ttf */ = {isa = PBXFileReference; name = "MouseMemoirs.ttf"; path = "../src/assets/fonts/MouseMemoirs.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		778CE54C1A574BC89FAE6BEA /* Rambla.ttf */ = {isa = PBXFileReference; name = "Rambla.ttf"; path = "../src/assets/fonts/Rambla.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +158,9 @@
 		E42AA67A91E94534A1476121 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5906BEA17AD847B89EDC8ADE /* Monoton-Regular.ttf */,
-				995FF244B2BE4EB19DE9D00C /* MouseMemoirs-Regular.ttf */,
-				3721BF52155A4523B5DEA57D /* Rambla-Regular.ttf */,
+				ACA6C10D572F4D248133A3FB /* Monoton.ttf */,
+				3A763203E2504553A41D0EAA /* MouseMemoirs.ttf */,
+				778CE54C1A574BC89FAE6BEA /* Rambla.ttf */,
 			);
 			name = Resources;
 			path = "";
@@ -262,9 +262,9 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				B8DFED8239C94011AB8CB8A7 /* Monoton-Regular.ttf in Resources */,
-				166DD6B763FC42FA9EB45E46 /* MouseMemoirs-Regular.ttf in Resources */,
-				3CEF1BC6DE5F4DCBBE63E03A /* Rambla-Regular.ttf in Resources */,
+				C722C0B90DA141DC859919AD /* Monoton.ttf in Resources */,
+				9E8F7430DB9D4D8487E71C15 /* MouseMemoirs.ttf in Resources */,
+				EEEA7C9E0E2F4924A35B3493 /* Rambla.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
