@@ -5,7 +5,7 @@ import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import InputBox from '../common/InputBox';
 
-const LoginBox = () => {
+const LoginBox = ({title}) => {
   const navigation = useNavigation();
   return (
     <View style={styles.main}>
@@ -14,16 +14,35 @@ const LoginBox = () => {
           navigation.navigate('Home');
         }}
         style={styles.container}>
-        <Text style={styles.heading}>Login</Text>
+        <Text style={styles.heading}>{title}</Text>
       </TouchableOpacity>
       <View style={styles.top}>
-        <Text style={styles.label}>Email</Text>
-        <InputBox styleprops={styles.input} />
-        <Text style={styles.label}>Password</Text>
-        <InputBox isPassword righticon styleprops={styles.input} />
+        <InputBox label="Email" placeholder="Email" />
+        <InputBox
+          isPassword
+          righticon
+          styleprops={styles.input}
+          placeholder="Password"
+          label="Password"
+        />
       </View>
 
-      <CustomButton text="Login" />
+      <CustomButton text={title} />
+      <View style={[styles.textbody]}>
+        <Text style={[styles.label, styles.text]}>
+          {title === 'Login' ? "Don't have an account?" : 'Have an account?'}
+        </Text>
+        <TouchableOpacity
+          onPress={() => {
+            title === 'Login'
+              ? navigation.navigate('Signup')
+              : navigation.navigate('Login');
+          }}>
+          <Text style={[styles.label, styles.text, styles.underline]}>
+            {title === 'Login' ? 'Sign up' : 'Login'}
+          </Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -32,7 +51,7 @@ export default LoginBox;
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 44,
+    fontSize: 42,
     fontFamily: 'Mouse Memoirs',
     color: 'white',
     paddingBottom: 10,
@@ -42,6 +61,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Rambla',
     color: 'white',
   },
+  text: {
+    fontSize: 14,
+  },
   main: {
     justifyContent: 'center',
     height: Platform.OS === 'web' ? '100vh' : '100%',
@@ -49,16 +71,23 @@ const styles = StyleSheet.create({
   container: {
     borderBottomWidth: 2,
     borderBottomColor: 'white',
-    marginBottom: 50,
+    marginBottom: 30,
   },
   top: {
-    marginTop: 16,
-    marginBottom: 25,
-    marginRight: 20,
+    paddingTop: 16,
+    paddingBottom: 16,
+    paddingRight: 20,
   },
   input: {
     alignSelf: 'center',
     marginBottom: 20,
     marginTop: 10,
+  },
+  underline: {
+    textDecorationColor: 'white',
+    textDecorationLine: 'underline',
+  },
+  textbody: {
+    paddingTop: 20,
   },
 });

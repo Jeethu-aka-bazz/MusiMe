@@ -4,18 +4,18 @@ import Header from '../components/common/Header';
 import ScreenContainer from '../components/common/ScreenContainer';
 import LoginBox from '../components/loginLogout/LoginBox';
 
-const Login = () => {
+const SignUp = () => {
   return (
     <>
       <Header />
       <ScreenContainer>
         <KeyboardAvoidingView
           behavior={Platform.OS === 'android' ? 'height' : 'padding'}>
-          <LoginBox title="Login" />
+          <LoginBox title="Sign Up" />
         </KeyboardAvoidingView>
       </ScreenContainer>
     </>
   );
 };
 
-export default Login;
+export default SignUp;
